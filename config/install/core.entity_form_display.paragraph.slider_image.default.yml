@@ -1,0 +1,59 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slider_image.field_slide_link
+    - field.field.paragraph.slider_image.field_slide_text
+    - field.field.paragraph.slider_image.field_slider_slide_image
+    - paragraphs.paragraphs_type.slider_image
+  module:
+    - field_group
+    - media_library
+    - text
+third_party_settings:
+  field_group:
+    group_slide_settings:
+      children:
+        - field_slider_slide_image
+        - field_slide_text
+        - field_slide_link
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: 'Slide Settings'
+id: paragraph.slider_image.default
+targetEntityType: paragraph
+bundle: slider_image
+mode: default
+content:
+  field_slide_link:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_slide_text:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_slider_slide_image:
+    type: media_library_widget
+    weight: 1
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_size
+    - paragraphs.paragraphs_type.slider
+  module:
+    - options
+id: paragraph.slider.field_size
+field_name: field_size
+entity_type: paragraph
+bundle: slider
+label: Size
+description: 'Set the size of your slider. Choose Full Width to span the full screen width. Choose Large to span the length of the content and Small for a narrow area like a sidebar.'
+required: true
+translatable: true
+default_value:
+  -
+    value: '0'
+default_value_callback: ''
+settings: {  }
+field_type: list_string
