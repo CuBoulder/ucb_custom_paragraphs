@@ -5,7 +5,6 @@ dependencies:
     - field.field.paragraph.slider.field_size
     - field.field.paragraph.slider.field_slider_slide
     - field.field.paragraph.slider.field_slider_text_style
-    - field.field.paragraph.slider.field_slider_title
     - paragraphs.paragraphs_type.slider
   module:
     - entity_reference_revisions
@@ -37,13 +36,5 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: list_default
-    region: content
-  field_slider_title:
-    weight: 0
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
     region: content
 hidden: {  }
