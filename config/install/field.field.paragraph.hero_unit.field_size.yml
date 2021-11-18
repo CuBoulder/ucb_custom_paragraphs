@@ -11,7 +11,7 @@ field_name: field_size
 entity_type: paragraph
 bundle: hero_unit
 label: Size
-description: 'This setting determines the size of the hero unit. Use Small for narrow areas and Large for wide areas. Full Width will make the hero unit stretch edge to edge.'
+description: 'This setting determines the size of the hero unit. Use Small for narrow areas, Medium for slightly taller areas, and Large for tall areas. '
 required: true
 translatable: false
 default_value:

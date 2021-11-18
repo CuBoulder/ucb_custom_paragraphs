@@ -12,13 +12,13 @@ settings:
   allowed_values:
     -
       value: '0'
-      label: 'Full Width'
+      label: Large
     -
       value: '1'
-      label: Small
+      label: Medium
     -
       value: '2'
-      label: Large
+      label: Small
   allowed_values_function: ''
 module: options
 locked: false
