@@ -11,7 +11,8 @@ dependencies:
   - media_library
   - options
   - paragraphs
+  - path
   - text
-  - ucb_custom_paragraphs
+  - user
 version: '1.0'
 package: 'UCB Custom Paragraphs'
