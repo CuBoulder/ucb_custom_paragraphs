@@ -3,10 +3,12 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.article_content.field_article_image
-    - field.field.paragraph.article_content.field_article_image_location
+    - field.field.paragraph.article_content.field_article_media_location
+    - field.field.paragraph.article_content.field_article_media_selection
     - field.field.paragraph.article_content.field_article_text
     - paragraphs.paragraphs_type.article_content
   module:
+    - entity_reference_revisions
     - options
     - text
 id: paragraph.article_content.default
@@ -14,21 +16,21 @@ targetEntityType: paragraph
 bundle: article_content
 mode: default
 content:
-  field_article_image:
-    type: entity_reference_entity_view
-    weight: 4
-    label: hidden
-    settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
-    region: content
-  field_article_image_location:
-    weight: 3
+  field_article_media_location:
+    weight: 6
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: list_default
+    region: content
+  field_article_media_selection:
+    type: entity_reference_revisions_entity_view
+    weight: 7
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
     region: content
   field_article_text:
     weight: 2
@@ -37,4 +39,5 @@ content:
     third_party_settings: {  }
     type: text_default
     region: content
-hidden: {  }
+hidden:
+  field_article_image: true

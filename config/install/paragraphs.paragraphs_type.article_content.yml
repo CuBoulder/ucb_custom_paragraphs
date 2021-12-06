@@ -5,5 +5,5 @@ id: article_content
 label: 'Article Content'
 icon_uuid: null
 icon_default: null
-description: ''
+description: "A block that can contain text and images, used for articles.\t"
 behavior_plugins: {  }
