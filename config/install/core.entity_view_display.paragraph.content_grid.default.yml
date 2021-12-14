@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_grid.field_grid_layout_selection
+    - paragraphs.paragraphs_type.content_grid
+  module:
+    - entity_reference_revisions
+id: paragraph.content_grid.default
+targetEntityType: paragraph
+bundle: content_grid
+mode: default
+content:
+  field_grid_layout_selection:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,57 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_grid_layout_selection
+    - paragraphs.paragraphs_type.columns_grid_layout
+    - paragraphs.paragraphs_type.content_grid
+  module:
+    - entity_reference_revisions
+id: paragraph.content_grid.field_grid_layout_selection
+field_name: field_grid_layout_selection
+entity_type: paragraph
+bundle: content_grid
+label: 'Grid Layout Selection'
+description: 'Select different types of grid layouts to display content.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      columns_grid_layout: columns_grid_layout
+    target_bundles_drag_drop:
+      article_content:
+        weight: 11
+        enabled: false
+      blockquote:
+        weight: 12
+        enabled: false
+      columns_grid_layout:
+        enabled: true
+        weight: 13
+      content_grid:
+        weight: 14
+        enabled: false
+      grid_layout_content:
+        weight: 15
+        enabled: false
+      hero_unit:
+        weight: 16
+        enabled: false
+      media:
+        weight: 17
+        enabled: false
+      slider:
+        weight: 18
+        enabled: false
+      slider_image:
+        weight: 19
+        enabled: false
+      text_block:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

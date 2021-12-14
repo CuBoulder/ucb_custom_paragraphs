@@ -1,0 +1,40 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.grid_layout_content.field_grid_layout_content_image
+    - field.field.paragraph.grid_layout_content.field_grid_layout_content_text
+    - field.field.paragraph.grid_layout_content.field_grid_layout_content_title
+    - paragraphs.paragraphs_type.grid_layout_content
+  module:
+    - text
+id: paragraph.grid_layout_content.default
+targetEntityType: paragraph
+bundle: grid_layout_content
+mode: default
+content:
+  field_grid_layout_content_image:
+    type: entity_reference_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_grid_layout_content_text:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_grid_layout_content_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }
