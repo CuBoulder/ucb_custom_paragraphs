@@ -3,8 +3,11 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_grid_layout_selection
+    - paragraphs.paragraphs_type.cards_grid_layout
     - paragraphs.paragraphs_type.columns_grid_layout
     - paragraphs.paragraphs_type.content_grid
+    - paragraphs.paragraphs_type.overlay_grid_layout
+    - paragraphs.paragraphs_type.teaser_grid_layout
   module:
     - entity_reference_revisions
 id: paragraph.content_grid.field_grid_layout_selection
@@ -23,6 +26,9 @@ settings:
     negate: 0
     target_bundles:
       columns_grid_layout: columns_grid_layout
+      cards_grid_layout: cards_grid_layout
+      overlay_grid_layout: overlay_grid_layout
+      teaser_grid_layout: teaser_grid_layout
     target_bundles_drag_drop:
       article_content:
         weight: 11
@@ -30,6 +36,9 @@ settings:
       blockquote:
         weight: 12
         enabled: false
+      cards_grid_layout:
+        enabled: true
+        weight: 14
       columns_grid_layout:
         enabled: true
         weight: 13
@@ -45,12 +54,21 @@ settings:
       media:
         weight: 17
         enabled: false
+      overlay_grid_layout:
+        enabled: true
+        weight: 21
+      overlay_grid_layout_content:
+        weight: 24
+        enabled: false
       slider:
         weight: 18
         enabled: false
       slider_image:
         weight: 19
         enabled: false
+      teaser_grid_layout:
+        enabled: true
+        weight: 27
       text_block:
         weight: 20
         enabled: false

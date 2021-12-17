@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: cards_grid_layout
+label: 'Cards Grid Layout'
+icon_uuid: null
+icon_default: null
+description: "A layout for the content grid. Allows you to set 2, 3, or 4 card columns to fill with content.\t"
+behavior_plugins: {  }

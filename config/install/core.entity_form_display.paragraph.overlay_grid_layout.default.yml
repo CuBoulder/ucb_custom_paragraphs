@@ -2,17 +2,23 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.columns_grid_layout.field_column_layout_content
-    - field.field.paragraph.columns_grid_layout.field_grid_column_count
-    - paragraphs.paragraphs_type.columns_grid_layout
+    - field.field.paragraph.overlay_grid_layout.field_grid_column_count
+    - field.field.paragraph.overlay_grid_layout.field_overlay_layout_content
+    - paragraphs.paragraphs_type.overlay_grid_layout
   module:
     - paragraphs
-id: paragraph.columns_grid_layout.default
+id: paragraph.overlay_grid_layout.default
 targetEntityType: paragraph
-bundle: columns_grid_layout
+bundle: overlay_grid_layout
 mode: default
 content:
-  field_column_layout_content:
+  field_grid_column_count:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_overlay_layout_content:
     type: entity_reference_paragraphs
     weight: 1
     settings:
@@ -23,12 +29,6 @@ content:
       form_display_mode: default
       default_paragraph_type: ''
     third_party_settings: {  }
-    region: content
-  field_grid_column_count:
-    weight: 0
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
     region: content
 hidden:
   created: true

@@ -1,0 +1,49 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.overlay_grid_layout_content.field_grid_layout_content_text
+    - field.field.paragraph.overlay_grid_layout_content.field_grid_layout_content_title
+    - field.field.paragraph.overlay_grid_layout_content.field_overlay_layout_image
+    - field.field.paragraph.overlay_grid_layout_content.field_text_color
+    - paragraphs.paragraphs_type.overlay_grid_layout_content
+  module:
+    - options
+    - text
+id: paragraph.overlay_grid_layout_content.default
+targetEntityType: paragraph
+bundle: overlay_grid_layout_content
+mode: default
+content:
+  field_grid_layout_content_text:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_grid_layout_content_title:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_overlay_layout_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_text_color:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden: {  }

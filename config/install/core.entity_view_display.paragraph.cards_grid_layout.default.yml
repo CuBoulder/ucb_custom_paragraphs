@@ -2,18 +2,18 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.columns_grid_layout.field_column_layout_content
-    - field.field.paragraph.columns_grid_layout.field_grid_column_count
-    - paragraphs.paragraphs_type.columns_grid_layout
+    - field.field.paragraph.cards_grid_layout.field_card_layout_content
+    - field.field.paragraph.cards_grid_layout.field_grid_column_count
+    - paragraphs.paragraphs_type.cards_grid_layout
   module:
     - entity_reference_revisions
     - options
-id: paragraph.columns_grid_layout.default
+id: paragraph.cards_grid_layout.default
 targetEntityType: paragraph
-bundle: columns_grid_layout
+bundle: cards_grid_layout
 mode: default
 content:
-  field_column_layout_content:
+  field_card_layout_content:
     type: entity_reference_revisions_entity_view
     weight: 1
     label: above
@@ -24,7 +24,7 @@ content:
     region: content
   field_grid_column_count:
     weight: 0
-    label: hidden
+    label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
