@@ -2,16 +2,16 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.teaser_grid_layout.field_teaser_layout_content
-    - paragraphs.paragraphs_type.teaser_grid_layout
+    - field.field.paragraph.tiles_grid_layout.field_tiles_layout_content
+    - paragraphs.paragraphs_type.tiles_grid_layout
   module:
     - entity_reference_revisions
-id: paragraph.teaser_grid_layout.default
+id: paragraph.tiles_grid_layout.default
 targetEntityType: paragraph
-bundle: teaser_grid_layout
+bundle: tiles_grid_layout
 mode: default
 content:
-  field_teaser_layout_content:
+  field_tiles_layout_content:
     type: entity_reference_revisions_entity_view
     weight: 0
     label: hidden

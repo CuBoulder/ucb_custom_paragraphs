@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_first_small_feature_color
+    - paragraphs.paragraphs_type.features_grid_layout_content
+  module:
+    - options
+id: paragraph.features_grid_layout_content.field_first_small_feature_color
+field_name: field_first_small_feature_color
+entity_type: paragraph
+bundle: features_grid_layout_content
+label: 'Feature Text Color'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: text-body
+default_value_callback: ''
+settings: {  }
+field_type: list_string
