@@ -16,34 +16,34 @@ bundle: overlay_grid_layout_content
 mode: default
 content:
   field_grid_layout_content_text:
-    weight: 1
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 2
     region: content
   field_grid_layout_content_title:
-    weight: 2
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 1
     region: content
   field_overlay_layout_image:
     type: entity_reference_entity_view
-    weight: 0
     label: hidden
     settings:
-      view_mode: default
+      view_mode: original_image
       link: false
     third_party_settings: {  }
+    weight: 0
     region: content
   field_text_color:
-    weight: 3
+    type: list_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 3
     region: content
 hidden: {  }

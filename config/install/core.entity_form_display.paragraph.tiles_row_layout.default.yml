@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tiles_row_layout.field_tiles_layout_content
+    - paragraphs.paragraphs_type.tiles_row_layout
+  module:
+    - paragraphs
+id: paragraph.tiles_row_layout.default
+targetEntityType: paragraph
+bundle: tiles_row_layout
+mode: default
+content:
+  field_tiles_layout_content:
+    type: entity_reference_paragraphs
+    weight: 0
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

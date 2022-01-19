@@ -9,9 +9,6 @@ dependencies:
     - paragraphs.paragraphs_type.features_grid_layout
     - paragraphs.paragraphs_type.offset_grid_layout
     - paragraphs.paragraphs_type.overlay_grid_layout
-    - paragraphs.paragraphs_type.teaser_alternate_grid_layout
-    - paragraphs.paragraphs_type.teaser_grid_layout
-    - paragraphs.paragraphs_type.tiles_grid_layout
   module:
     - entity_reference_revisions
 id: paragraph.content_grid.field_grid_layout_selection
@@ -27,16 +24,13 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       columns_grid_layout: columns_grid_layout
       cards_grid_layout: cards_grid_layout
       overlay_grid_layout: overlay_grid_layout
       features_grid_layout: features_grid_layout
-      teaser_grid_layout: teaser_grid_layout
       offset_grid_layout: offset_grid_layout
-      teaser_alternate_grid_layout: teaser_alternate_grid_layout
-      tiles_grid_layout: tiles_grid_layout
+    negate: 0
     target_bundles_drag_drop:
       article_content:
         weight: 11
@@ -45,17 +39,17 @@ settings:
         weight: 12
         enabled: false
       cards_grid_layout:
-        enabled: true
         weight: 14
-      columns_grid_layout:
         enabled: true
+      columns_grid_layout:
         weight: 13
+        enabled: true
       content_grid:
         weight: 14
         enabled: false
       features_grid_layout:
-        enabled: true
         weight: 23
+        enabled: true
       grid_layout_content:
         weight: 15
         enabled: false
@@ -66,11 +60,11 @@ settings:
         weight: 17
         enabled: false
       offset_grid_layout:
-        enabled: true
         weight: 28
-      overlay_grid_layout:
         enabled: true
+      overlay_grid_layout:
         weight: 21
+        enabled: true
       overlay_grid_layout_content:
         weight: 24
         enabled: false
@@ -81,15 +75,15 @@ settings:
         weight: 19
         enabled: false
       teaser_alternate_grid_layout:
-        enabled: true
         weight: 28
-      teaser_grid_layout:
         enabled: true
+      teaser_grid_layout:
         weight: 27
+        enabled: true
       text_block:
         weight: 20
         enabled: false
       tiles_grid_layout:
-        enabled: true
         weight: 32
+        enabled: true
 field_type: entity_reference_revisions
