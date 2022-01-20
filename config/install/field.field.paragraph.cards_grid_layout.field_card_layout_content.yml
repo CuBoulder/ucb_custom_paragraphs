@@ -1,0 +1,60 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_card_layout_content
+    - paragraphs.paragraphs_type.cards_grid_layout
+    - paragraphs.paragraphs_type.grid_layout_content
+  module:
+    - entity_reference_revisions
+id: paragraph.cards_grid_layout.field_card_layout_content
+field_name: field_card_layout_content
+entity_type: paragraph
+bundle: cards_grid_layout
+label: 'Layout Content'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      grid_layout_content: grid_layout_content
+    target_bundles_drag_drop:
+      article_content:
+        weight: 12
+        enabled: false
+      blockquote:
+        weight: 13
+        enabled: false
+      cards_grid_layout:
+        weight: 14
+        enabled: false
+      columns_grid_layout:
+        weight: 15
+        enabled: false
+      content_grid:
+        weight: 16
+        enabled: false
+      grid_layout_content:
+        enabled: true
+        weight: 17
+      hero_unit:
+        weight: 18
+        enabled: false
+      media:
+        weight: 19
+        enabled: false
+      slider:
+        weight: 20
+        enabled: false
+      slider_image:
+        weight: 21
+        enabled: false
+      text_block:
+        weight: 22
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.teaser_alternate_row_layout.field_teaser_alt_layout_content
+    - paragraphs.paragraphs_type.teaser_alternate_row_layout
+  module:
+    - paragraphs
+id: paragraph.teaser_alternate_row_layout.default
+targetEntityType: paragraph
+bundle: teaser_alternate_row_layout
+mode: default
+content:
+  field_teaser_alt_layout_content:
+    type: entity_reference_paragraphs
+    weight: 0
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

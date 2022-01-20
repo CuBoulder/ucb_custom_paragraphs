@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_grid_column_count
+    - paragraphs.paragraphs_type.cards_grid_layout
+  module:
+    - options
+id: paragraph.cards_grid_layout.field_grid_column_count
+field_name: field_grid_column_count
+entity_type: paragraph
+bundle: cards_grid_layout
+label: 'Grid Column Count'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: '1'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

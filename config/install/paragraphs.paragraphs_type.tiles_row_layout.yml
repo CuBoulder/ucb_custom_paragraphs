@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: tiles_row_layout
+label: 'Tiles Row Layout'
+icon_uuid: null
+icon_default: null
+description: 'Tiles layout for the row content paragraph.'
+behavior_plugins: {  }

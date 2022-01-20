@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_grid_column_count
+    - paragraphs.paragraphs_type.columns_grid_layout
+  module:
+    - options
+id: paragraph.columns_grid_layout.field_grid_column_count
+field_name: field_grid_column_count
+entity_type: paragraph
+bundle: columns_grid_layout
+label: 'Grid Column Count'
+description: 'Select the number of columns you would like for your grid content to be laid out in.'
+required: true
+translatable: true
+default_value:
+  -
+    value: '1'
+default_value_callback: ''
+settings: {  }
+field_type: list_string
