@@ -1,9 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: features_grid_layout_content
-label: 'Features Grid Layout Content'
-icon_uuid: null
-icon_default: null
-description: 'Paragraph for content of the Features Layout type for Grid Content'
-behavior_plugins: {  }
