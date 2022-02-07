@@ -2,15 +2,28 @@ langcode: en
 status: true
 dependencies:
   module:
-    - entity_reference_revisions
+    - options
     - paragraphs
 id: paragraph.field_row_layout_selection
 field_name: field_row_layout_selection
 entity_type: paragraph
-type: entity_reference_revisions
+type: list_string
 settings:
-  target_type: paragraph
-module: entity_reference_revisions
+  allowed_values:
+    -
+      value: '0'
+      label: Teasers
+    -
+      value: '1'
+      label: 'Teasers Alternate'
+    -
+      value: '2'
+      label: Tiles
+    -
+      value: '3'
+      label: Features
+  allowed_values_function: ''
+module: options
 locked: false
 cardinality: 1
 translatable: true

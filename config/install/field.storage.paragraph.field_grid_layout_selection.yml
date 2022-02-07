@@ -2,15 +2,28 @@ langcode: en
 status: true
 dependencies:
   module:
-    - entity_reference_revisions
+    - options
     - paragraphs
 id: paragraph.field_grid_layout_selection
 field_name: field_grid_layout_selection
 entity_type: paragraph
-type: entity_reference_revisions
+type: list_string
 settings:
-  target_type: paragraph
-module: entity_reference_revisions
+  allowed_values:
+    -
+      value: '0'
+      label: Columns
+    -
+      value: '1'
+      label: Cards
+    -
+      value: '2'
+      label: Overlay
+    -
+      value: '3'
+      label: Offset
+  allowed_values_function: ''
+module: options
 locked: false
 cardinality: 1
 translatable: true

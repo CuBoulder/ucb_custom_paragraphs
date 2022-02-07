@@ -1,9 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: tiles_grid_layout
-label: 'Tiles Grid Layout'
-icon_uuid: null
-icon_default: null
-description: 'Tiles layout for the grid content paragraph'
-behavior_plugins: {  }

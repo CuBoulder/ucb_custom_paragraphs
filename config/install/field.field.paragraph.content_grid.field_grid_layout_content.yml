@@ -2,16 +2,16 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_teaser_alt_layout_content
+    - field.storage.paragraph.field_grid_layout_content
+    - paragraphs.paragraphs_type.content_grid
     - paragraphs.paragraphs_type.grid_layout_content
-    - paragraphs.paragraphs_type.teaser_alternate_grid_layout
   module:
     - entity_reference_revisions
-id: paragraph.teaser_alternate_grid_layout.field_teaser_alt_layout_content
-field_name: field_teaser_alt_layout_content
+id: paragraph.content_grid.field_grid_layout_content
+field_name: field_grid_layout_content
 entity_type: paragraph
-bundle: teaser_alternate_grid_layout
-label: 'Layout Content'
+bundle: content_grid
+label: 'Grid Layout Content'
 description: ''
 required: true
 translatable: false
@@ -20,53 +20,47 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       grid_layout_content: grid_layout_content
+    negate: 0
     target_bundles_drag_drop:
       article_content:
-        weight: 16
+        weight: 14
         enabled: false
       blockquote:
-        weight: 17
-        enabled: false
-      cards_grid_layout:
-        weight: 18
-        enabled: false
-      columns_grid_layout:
-        weight: 19
+        weight: 15
         enabled: false
       content_grid:
-        weight: 20
+        weight: 16
+        enabled: false
+      content_row:
+        weight: 17
+        enabled: false
+      expandable_content:
+        weight: 18
+        enabled: false
+      expandable_content_text:
+        weight: 19
         enabled: false
       grid_layout_content:
+        weight: 20
         enabled: true
-        weight: 21
       hero_unit:
-        weight: 22
+        weight: 21
         enabled: false
       media:
+        weight: 22
+        enabled: false
+      row_layout_content:
         weight: 23
         enabled: false
-      overlay_grid_layout:
+      slider:
         weight: 24
         enabled: false
-      overlay_grid_layout_content:
+      slider_image:
         weight: 25
         enabled: false
-      slider:
-        weight: 26
-        enabled: false
-      slider_image:
-        weight: 27
-        enabled: false
-      teaser_alternate_grid_layout:
-        weight: 28
-        enabled: false
-      teaser_grid_layout:
-        weight: 29
-        enabled: false
       text_block:
-        weight: 30
+        weight: 26
         enabled: false
 field_type: entity_reference_revisions
