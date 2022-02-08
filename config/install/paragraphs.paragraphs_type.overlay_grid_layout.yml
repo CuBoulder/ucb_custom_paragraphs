@@ -1,9 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: overlay_grid_layout
-label: "Overlay Grid Layout\t"
-icon_uuid: null
-icon_default: null
-description: 'A layout for the content grid. Allows you to set 2, 3, or 4 columns to fill with content where the title lays over the selected image.'
-behavior_plugins: {  }

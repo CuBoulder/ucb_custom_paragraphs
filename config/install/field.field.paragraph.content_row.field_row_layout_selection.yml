@@ -4,91 +4,19 @@ dependencies:
   config:
     - field.storage.paragraph.field_row_layout_selection
     - paragraphs.paragraphs_type.content_row
-    - paragraphs.paragraphs_type.teaser_alternate_row_layout
-    - paragraphs.paragraphs_type.teaser_row_layout
-    - paragraphs.paragraphs_type.tiles_row_layout
   module:
-    - entity_reference_revisions
+    - options
 id: paragraph.content_row.field_row_layout_selection
 field_name: field_row_layout_selection
 entity_type: paragraph
 bundle: content_row
 label: 'Row Layout Selection'
 description: ''
-required: false
+required: true
 translatable: false
-default_value: {  }
+default_value:
+  -
+    value: '0'
 default_value_callback: ''
-settings:
-  handler: 'default:paragraph'
-  handler_settings:
-    target_bundles:
-      teaser_alternate_row_layout: teaser_alternate_row_layout
-      teaser_row_layout: teaser_row_layout
-      tiles_row_layout: tiles_row_layout
-    negate: 0
-    target_bundles_drag_drop:
-      article_content:
-        weight: 22
-        enabled: false
-      blockquote:
-        weight: 23
-        enabled: false
-      cards_grid_layout:
-        weight: 24
-        enabled: false
-      columns_grid_layout:
-        weight: 25
-        enabled: false
-      content_grid:
-        weight: 26
-        enabled: false
-      content_row:
-        weight: 27
-        enabled: false
-      features_grid_layout:
-        weight: 28
-        enabled: false
-      features_grid_layout_content:
-        weight: 29
-        enabled: false
-      grid_layout_content:
-        weight: 30
-        enabled: false
-      hero_unit:
-        weight: 31
-        enabled: false
-      media:
-        weight: 32
-        enabled: false
-      offset_grid_layout:
-        weight: 33
-        enabled: false
-      overlay_grid_layout:
-        weight: 34
-        enabled: false
-      overlay_grid_layout_content:
-        weight: 35
-        enabled: false
-      row_layout_content:
-        weight: 36
-        enabled: false
-      slider:
-        weight: 37
-        enabled: false
-      slider_image:
-        weight: 38
-        enabled: false
-      teaser_alternate_row_layout:
-        weight: 39
-        enabled: true
-      teaser_row_layout:
-        weight: 40
-        enabled: true
-      text_block:
-        weight: 41
-        enabled: false
-      tiles_row_layout:
-        weight: 42
-        enabled: true
-field_type: entity_reference_revisions
+settings: {  }
+field_type: list_string

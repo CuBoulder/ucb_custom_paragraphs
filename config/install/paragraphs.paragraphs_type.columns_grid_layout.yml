@@ -1,9 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: columns_grid_layout
-label: 'Columns Grid Layout'
-icon_uuid: null
-icon_default: null
-description: "A layout for the content grid.\r\nAllows you to set 2, 3, or 4 columns to fill with content."
-behavior_plugins: {  }

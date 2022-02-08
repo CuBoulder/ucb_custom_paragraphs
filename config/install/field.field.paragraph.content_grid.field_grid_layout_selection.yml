@@ -3,87 +3,20 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_grid_layout_selection
-    - paragraphs.paragraphs_type.cards_grid_layout
-    - paragraphs.paragraphs_type.columns_grid_layout
     - paragraphs.paragraphs_type.content_grid
-    - paragraphs.paragraphs_type.features_grid_layout
-    - paragraphs.paragraphs_type.offset_grid_layout
-    - paragraphs.paragraphs_type.overlay_grid_layout
   module:
-    - entity_reference_revisions
+    - options
 id: paragraph.content_grid.field_grid_layout_selection
 field_name: field_grid_layout_selection
 entity_type: paragraph
 bundle: content_grid
 label: 'Grid Layout Selection'
-description: 'Select different types of grid layouts to display content.'
+description: ''
 required: true
 translatable: false
-default_value: {  }
+default_value:
+  -
+    value: '0'
 default_value_callback: ''
-settings:
-  handler: 'default:paragraph'
-  handler_settings:
-    target_bundles:
-      columns_grid_layout: columns_grid_layout
-      cards_grid_layout: cards_grid_layout
-      overlay_grid_layout: overlay_grid_layout
-      features_grid_layout: features_grid_layout
-      offset_grid_layout: offset_grid_layout
-    negate: 0
-    target_bundles_drag_drop:
-      article_content:
-        weight: 11
-        enabled: false
-      blockquote:
-        weight: 12
-        enabled: false
-      cards_grid_layout:
-        weight: 14
-        enabled: true
-      columns_grid_layout:
-        weight: 13
-        enabled: true
-      content_grid:
-        weight: 14
-        enabled: false
-      features_grid_layout:
-        weight: 23
-        enabled: true
-      grid_layout_content:
-        weight: 15
-        enabled: false
-      hero_unit:
-        weight: 16
-        enabled: false
-      media:
-        weight: 17
-        enabled: false
-      offset_grid_layout:
-        weight: 28
-        enabled: true
-      overlay_grid_layout:
-        weight: 21
-        enabled: true
-      overlay_grid_layout_content:
-        weight: 24
-        enabled: false
-      slider:
-        weight: 18
-        enabled: false
-      slider_image:
-        weight: 19
-        enabled: false
-      teaser_alternate_grid_layout:
-        weight: 28
-        enabled: true
-      teaser_grid_layout:
-        weight: 27
-        enabled: true
-      text_block:
-        weight: 20
-        enabled: false
-      tiles_grid_layout:
-        weight: 32
-        enabled: true
-field_type: entity_reference_revisions
+settings: {  }
+field_type: list_string
