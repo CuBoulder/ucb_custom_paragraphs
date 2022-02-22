@@ -11,7 +11,7 @@ entity_type: paragraph
 bundle: grid_layout_content
 label: Image
 description: "Image for grid content\r\nIt is best to use square images."
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''

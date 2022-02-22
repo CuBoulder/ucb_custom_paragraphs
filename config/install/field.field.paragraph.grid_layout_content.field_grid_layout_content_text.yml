@@ -12,7 +12,7 @@ entity_type: paragraph
 bundle: grid_layout_content
 label: Text
 description: 'Text for the grid content'
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
