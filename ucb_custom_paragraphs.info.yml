@@ -14,5 +14,5 @@ dependencies:
   - path
   - text
   - user
-version: '1.07'
+version: '1.08'
 package: 'UCB Custom Paragraphs'
