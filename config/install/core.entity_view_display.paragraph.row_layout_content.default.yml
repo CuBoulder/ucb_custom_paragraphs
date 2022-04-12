@@ -3,10 +3,12 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.row_layout_content.field_row_layout_content_image
+    - field.field.paragraph.row_layout_content.field_row_layout_content_link
     - field.field.paragraph.row_layout_content.field_row_layout_content_text
     - field.field.paragraph.row_layout_content.field_row_layout_content_title
     - paragraphs.paragraphs_type.row_layout_content
   module:
+    - link
     - text
 id: paragraph.row_layout_content.default
 targetEntityType: paragraph
@@ -21,6 +23,18 @@ content:
       link: false
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_row_layout_content_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
     region: content
   field_row_layout_content_text:
     type: text_default
