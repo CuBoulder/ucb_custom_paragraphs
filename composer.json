@@ -2,5 +2,5 @@
     "name": "cu-boulder/ucb_custom_paragraphs",
     "description": "Custom paragraph types to be used as blocks for site building",
     "license": "MIT",
-    "type": "drupal-module"
+    "type": "drupal-custom-module"
 }
