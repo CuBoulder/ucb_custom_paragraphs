@@ -1,0 +1,104 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ucb_video_reveal.field_ucb_vid_reveal_image
+    - field.field.paragraph.ucb_video_reveal.field_ucb_vid_reveal_text
+    - field.field.paragraph.ucb_video_reveal.field_ucb_vid_reveal_video
+    - paragraphs.paragraphs_type.ucb_video_reveal
+  module:
+    - field_group
+    - media_library
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_video
+        - group_image
+        - group_text
+      label: Tabs
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        direction: horizontal
+        width_breakpoint: 640
+    group_video:
+      children:
+        - field_ucb_vid_reveal_video
+      label: Video
+      region: content
+      parent_name: group_tabs
+      weight: 6
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: open
+        description: ''
+        required_fields: true
+    group_image:
+      children:
+        - field_ucb_vid_reveal_image
+      label: Image
+      region: content
+      parent_name: group_tabs
+      weight: 7
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_text:
+      children:
+        - field_ucb_vid_reveal_text
+      label: Text
+      region: content
+      parent_name: group_tabs
+      weight: 8
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+id: paragraph.ucb_video_reveal.default
+targetEntityType: paragraph
+bundle: ucb_video_reveal
+mode: default
+content:
+  field_ucb_vid_reveal_image:
+    type: media_library_widget
+    weight: 1
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_ucb_vid_reveal_text:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_ucb_vid_reveal_video:
+    type: media_library_widget
+    weight: 2
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
