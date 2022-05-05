@@ -19,6 +19,12 @@ settings:
     -
       value: text-center
       label: Center
+    -
+      value: text-lefthalf
+      label: 'Left Half'
+    -
+      value: text-righthalf
+      label: 'Right Half'
   allowed_values_function: ''
 module: options
 locked: false
