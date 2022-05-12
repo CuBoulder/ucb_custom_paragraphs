@@ -3,12 +3,12 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_newsletter_section_title
-    - paragraphs.paragraphs_type.newsletter_section_content
-id: paragraph.newsletter_section_content.field_newsletter_section_title
+    - paragraphs.paragraphs_type.newsletter_section
+id: paragraph.newsletter_section.field_newsletter_section_title
 field_name: field_newsletter_section_title
 entity_type: paragraph
-bundle: newsletter_section_content
-label: Title
+bundle: newsletter_section
+label: 'Section Title'
 description: ''
 required: false
 translatable: false

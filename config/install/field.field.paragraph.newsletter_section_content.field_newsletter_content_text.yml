@@ -2,12 +2,12 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_newsletter_section_text
+    - field.storage.paragraph.field_newsletter_content_text
     - paragraphs.paragraphs_type.newsletter_section_content
   module:
     - text
-id: paragraph.newsletter_section_content.field_newsletter_section_text
-field_name: field_newsletter_section_text
+id: paragraph.newsletter_section_content.field_newsletter_content_text
+field_name: field_newsletter_content_text
 entity_type: paragraph
 bundle: newsletter_section_content
 label: Text
