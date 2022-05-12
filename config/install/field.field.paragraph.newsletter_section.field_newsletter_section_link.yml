@@ -11,7 +11,7 @@ field_name: field_newsletter_section_link
 entity_type: paragraph
 bundle: newsletter_section
 label: 'More Link'
-description: ''
+description: 'Use for linking to a resource that has more information relating to this section.'
 required: false
 translatable: false
 default_value: {  }

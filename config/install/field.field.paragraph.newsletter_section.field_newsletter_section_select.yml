@@ -13,7 +13,7 @@ field_name: field_newsletter_section_select
 entity_type: paragraph
 bundle: newsletter_section
 label: 'Section Select'
-description: ''
+description: 'Choose between either making your own content or importing the summary excerpt, thumbnail, categories, and links for an article.'
 required: false
 translatable: false
 default_value: {  }

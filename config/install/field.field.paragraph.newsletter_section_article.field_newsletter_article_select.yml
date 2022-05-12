@@ -10,7 +10,7 @@ field_name: field_newsletter_article_select
 entity_type: paragraph
 bundle: newsletter_section_article
 label: 'Article Selection'
-description: ''
+description: 'Search functionality to link in articles into newsletters sections'
 required: false
 translatable: false
 default_value: {  }

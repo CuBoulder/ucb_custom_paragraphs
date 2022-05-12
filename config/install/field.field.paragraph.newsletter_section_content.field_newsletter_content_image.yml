@@ -10,7 +10,7 @@ field_name: field_newsletter_content_image
 entity_type: paragraph
 bundle: newsletter_section_content
 label: Image
-description: ''
+description: 'Main image for newsletter section content'
 required: false
 translatable: false
 default_value: {  }

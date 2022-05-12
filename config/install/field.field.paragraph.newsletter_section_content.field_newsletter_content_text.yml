@@ -11,7 +11,7 @@ field_name: field_newsletter_content_text
 entity_type: paragraph
 bundle: newsletter_section_content
 label: Text
-description: ''
+description: 'Main text block for newsletter section content'
 required: false
 translatable: false
 default_value: {  }

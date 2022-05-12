@@ -9,7 +9,7 @@ field_name: field_newsletter_section_title
 entity_type: paragraph
 bundle: newsletter_section
 label: 'Section Title'
-description: ''
+description: 'Title for the overall section'
 required: false
 translatable: false
 default_value: {  }
