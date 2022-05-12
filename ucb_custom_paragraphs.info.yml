@@ -10,6 +10,7 @@ dependencies:
   - media
   - media_library
   - options
+  - node
   - paragraphs
   - path
   - text
