@@ -16,5 +16,5 @@ dependencies:
   - text
   - user
   - ucb_custom_page_types
-version: '1.0.14'
+version: '1.0.15'
 package: 'UCB Custom Paragraphs'
