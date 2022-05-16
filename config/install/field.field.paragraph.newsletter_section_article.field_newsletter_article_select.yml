@@ -3,7 +3,6 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_newsletter_article_select
-    - node.type.ucb_article
     - paragraphs.paragraphs_type.newsletter_section_article
 id: paragraph.newsletter_section_article.field_newsletter_article_select
 field_name: field_newsletter_article_select
