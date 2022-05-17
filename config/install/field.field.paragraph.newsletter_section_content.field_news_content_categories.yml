@@ -4,7 +4,6 @@ dependencies:
   config:
     - field.storage.paragraph.field_news_content_categories
     - paragraphs.paragraphs_type.newsletter_section_content
-    - taxonomy.vocabulary.category
 id: paragraph.newsletter_section_content.field_news_content_categories
 field_name: field_news_content_categories
 entity_type: paragraph
