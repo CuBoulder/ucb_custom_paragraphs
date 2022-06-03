@@ -10,9 +10,11 @@ dependencies:
   - media
   - media_library
   - options
+  - node
   - paragraphs
   - path
   - text
   - user
-version: '1.0.14'
+  - ucb_custom_page_types
+version: '1.0.15'
 package: 'UCB Custom Paragraphs'

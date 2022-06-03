@@ -4,24 +4,18 @@ dependencies:
   module:
     - options
     - paragraphs
-id: paragraph.field_article_image_location
-field_name: field_article_image_location
+id: paragraph.field_newsletter_section_style
+field_name: field_newsletter_section_style
 entity_type: paragraph
 type: list_string
 settings:
   allowed_values:
     -
       value: '0'
-      label: Top
+      label: Feature
     -
       value: '1'
-      label: Bottom
-    -
-      value: '2'
-      label: Left
-    -
-      value: '3'
-      label: Right
+      label: Teaser
   allowed_values_function: ''
 module: options
 locked: false
