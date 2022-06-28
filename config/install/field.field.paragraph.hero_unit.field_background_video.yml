@@ -2,15 +2,15 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_background_image
-    - media.type.image
+    - field.storage.paragraph.field_background_video
+    - media.type.video
     - paragraphs.paragraphs_type.hero_unit
-id: paragraph.hero_unit.field_background_image
-field_name: field_background_image
+id: paragraph.hero_unit.field_background_video
+field_name: field_background_video
 entity_type: paragraph
 bundle: hero_unit
-label: 'Background Image'
-description: 'Set a background image. This setting takes priority over a solid color background.'
+label: 'Background Video'
+description: ''
 required: false
 translatable: false
 default_value: {  }
@@ -19,10 +19,10 @@ settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
-      image: image
+      video: video
     sort:
       field: _none
       direction: ASC
     auto_create: false
-    auto_create_bundle: image
+    auto_create_bundle: ''
 field_type: entity_reference
