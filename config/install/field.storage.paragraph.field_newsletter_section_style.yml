@@ -4,24 +4,18 @@ dependencies:
   module:
     - options
     - paragraphs
-id: paragraph.field_size
-field_name: field_size
+id: paragraph.field_newsletter_section_style
+field_name: field_newsletter_section_style
 entity_type: paragraph
 type: list_string
 settings:
   allowed_values:
     -
       value: '0'
-      label: 'Ultrawide - 1600x600'
+      label: Feature
     -
       value: '1'
-      label: 'Widescreen - 1600x900'
-    -
-      value: '2'
-      label: '3:2 - 1500x500'
-    -
-      value: '3'
-      label: Large
+      label: Teaser
   allowed_values_function: ''
 module: options
 locked: false

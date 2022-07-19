@@ -3,7 +3,6 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.how_to_individual_step.field_how_to_step_image
-    - field.field.paragraph.how_to_individual_step.field_how_to_step_text
     - field.field.paragraph.how_to_individual_step.field_how_to_step_title
     - field.field.paragraph.how_to_individual_step.field_how_to_sub_steps
     - paragraphs.paragraphs_type.how_to_individual_step
@@ -21,14 +20,7 @@ content:
       view_mode: focal_image_render
       link: false
     third_party_settings: {  }
-    weight: 0
-    region: content
-  field_how_to_step_text:
-    type: text_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 3
+    weight: 2
     region: content
   field_how_to_step_title:
     type: string
@@ -36,14 +28,13 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 2
+    weight: 0
     region: content
   field_how_to_sub_steps:
-    type: string
+    type: text_default
     label: above
-    settings:
-      link_to_entity: false
+    settings: {  }
     third_party_settings: {  }
-    weight: 4
+    weight: 3
     region: content
 hidden: {  }

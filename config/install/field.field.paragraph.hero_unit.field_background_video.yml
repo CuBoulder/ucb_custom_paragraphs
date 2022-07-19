@@ -2,14 +2,14 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_how_to_step_image
-    - media.type.image
-    - paragraphs.paragraphs_type.how_to_individual_step
-id: paragraph.how_to_individual_step.field_how_to_step_image
-field_name: field_how_to_step_image
+    - field.storage.paragraph.field_background_video
+    - media.type.video
+    - paragraphs.paragraphs_type.hero_unit
+id: paragraph.hero_unit.field_background_video
+field_name: field_background_video
 entity_type: paragraph
-bundle: how_to_individual_step
-label: 'How-To Step Image'
+bundle: hero_unit
+label: 'Background Video'
 description: ''
 required: false
 translatable: false
@@ -19,7 +19,7 @@ settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
-      image: image
+      video: video
     sort:
       field: _none
       direction: ASC

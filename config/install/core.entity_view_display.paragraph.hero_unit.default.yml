@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.hero_unit.field_background_image
+    - field.field.paragraph.hero_unit.field_background_video
     - field.field.paragraph.hero_unit.field_headline
     - field.field.paragraph.hero_unit.field_link_color
     - field.field.paragraph.hero_unit.field_links
@@ -50,6 +51,7 @@ content:
     region: content
 hidden:
   field_background_image: true
+  field_background_video: true
   field_link_color: true
   field_size: true
   field_solid_colors: true
