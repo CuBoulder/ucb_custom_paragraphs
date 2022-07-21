@@ -30,11 +30,11 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_how_to_sub_steps:
-    type: text_textfield
+    type: text_textarea
     weight: 3
     region: content
     settings:
-      size: 60
+      rows: 5
       placeholder: ''
     third_party_settings: {  }
 hidden:

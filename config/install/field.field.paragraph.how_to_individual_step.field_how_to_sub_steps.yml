@@ -10,11 +10,11 @@ id: paragraph.how_to_individual_step.field_how_to_sub_steps
 field_name: field_how_to_sub_steps
 entity_type: paragraph
 bundle: how_to_individual_step
-label: 'How-To Sub Steps'
-description: ''
+label: Directions
+description: 'Directions for the current step in the process.'
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: text
+field_type: text_long

@@ -8,8 +8,8 @@ id: paragraph.how_to_individual_step.field_how_to_step_title
 field_name: field_how_to_step_title
 entity_type: paragraph
 bundle: how_to_individual_step
-label: 'How-To Step Title'
-description: ''
+label: 'Step Title'
+description: 'Title of the current step'
 required: false
 translatable: false
 default_value: {  }
