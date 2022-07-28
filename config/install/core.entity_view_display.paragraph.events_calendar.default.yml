@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.events_calendar.field_calendar_code
+    - field.field.paragraph.events_calendar.field_calendar_code_title
     - paragraphs.paragraphs_type.events_calendar
 id: paragraph.events_calendar.default
 targetEntityType: paragraph
@@ -11,9 +12,17 @@ mode: default
 content:
   field_calendar_code:
     type: basic_string
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_calendar_code_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
     region: content
 hidden: {  }

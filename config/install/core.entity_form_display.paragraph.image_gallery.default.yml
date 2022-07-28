@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.image_gallery.field_image_gallery_photo
+    - field.field.paragraph.image_gallery.field_image_gallery_title
     - paragraphs.paragraphs_type.image_gallery
   module:
     - media_library
@@ -13,10 +14,18 @@ mode: default
 content:
   field_image_gallery_photo:
     type: media_library_widget
-    weight: 0
+    weight: 1
     region: content
     settings:
       media_types: {  }
+    third_party_settings: {  }
+  field_image_gallery_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
 hidden:
   created: true

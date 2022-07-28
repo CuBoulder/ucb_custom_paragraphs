@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_expandable_section_title
+    - paragraphs.paragraphs_type.expandable_content
+id: paragraph.expandable_content.field_expandable_section_title
+field_name: field_expandable_section_title
+entity_type: paragraph
+bundle: expandable_content
+label: 'Optional Title'
+description: 'This title will display above the expandable content.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

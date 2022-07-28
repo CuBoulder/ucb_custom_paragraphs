@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.field.paragraph.expandable_content.field_expandable_content_copy
     - field.field.paragraph.expandable_content.field_expandable_content_type
+    - field.field.paragraph.expandable_content.field_expandable_section_title
     - paragraphs.paragraphs_type.expandable_content
   module:
     - paragraphs
@@ -14,7 +15,7 @@ mode: default
 content:
   field_expandable_content_copy:
     type: entity_reference_paragraphs
-    weight: 1
+    weight: 2
     region: content
     settings:
       title: Paragraph
@@ -26,9 +27,17 @@ content:
     third_party_settings: {  }
   field_expandable_content_type:
     type: options_select
-    weight: 0
+    weight: 1
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_expandable_section_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
 hidden:
   created: true

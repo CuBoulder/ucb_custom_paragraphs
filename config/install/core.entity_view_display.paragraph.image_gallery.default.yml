@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.image_gallery.field_image_gallery_photo
+    - field.field.paragraph.image_gallery.field_image_gallery_title
     - paragraphs.paragraphs_type.image_gallery
 id: paragraph.image_gallery.default
 targetEntityType: paragraph
@@ -17,5 +18,13 @@ content:
       link: false
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_image_gallery_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
     region: content
 hidden: {  }
